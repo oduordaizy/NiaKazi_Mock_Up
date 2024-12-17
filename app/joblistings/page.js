@@ -6,3 +6,5 @@ const Joblistings = () => {
     
     </>
 }
+
+export default Joblistings;

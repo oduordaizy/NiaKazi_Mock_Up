@@ -2,7 +2,7 @@ import React from 'react'
 
 function RecriterLogin() {
   return (
-    <div>RecriterLogin</div>
+    <div>Dear recruiter, welcome to the login page</div>
   )
 }
 

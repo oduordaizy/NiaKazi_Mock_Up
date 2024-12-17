@@ -1,7 +1,20 @@
-import Image from "next/image";
+"use client"
 
-export default function Home() {
+import * as React from "react"
+import CompleteNavbar from "@/components/Navigation";
+
+export function Home() {
   return (
-  <h1>This is the homepage</h1>
+    <>
+     
+      <div>
+        <CompleteNavbar />
+        
+       
+      </div>
+      
+    </>
   );
 }
+
+export default Home;
