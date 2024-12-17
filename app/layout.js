@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Daisy Rec 👩‍💻",
+  title: "👩‍💻",
   description: "ATS, Recruiters, Job application",
 };
 
