@@ -74,8 +74,8 @@ export default function CompleteNavbar(){
             </div>
 
             <div className="loginbtns">
-              <Link href = "./recruiter/login"><Button id="btn1">Post Job</Button></Link>
-              <Link href = "./applicant/login"><Button id="btn2">Get hired</Button></Link>
+              <Link href = "./recruiter/dashboard"><Button id="btn1">Post Job</Button></Link>
+              <Link href = "./applicant/login"><Button className="btn2">Get hired</Button></Link>
             </div>
 
         </div>       
