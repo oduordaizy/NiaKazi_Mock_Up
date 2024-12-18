@@ -3,8 +3,9 @@
 @tailwind utilities;
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  background: #e4f1fe; 
+  font-family: Inter;
+  background: #e4f1fe;
+  font-size: large;
 }
 
 .title{
@@ -12,6 +13,37 @@ body {
   text-align: center;
   font-size: 2rem;
 }
+
+/****recruiter/dashboard start*******/
+.parent{
+  display: flex;
+
+}
+
+.postbtn{
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.dashbordContainer{
+  width: 70%;
+  display: flex;
+  margin: 10px auto;
+  margin-left: 15%;
+  
+  
+}
+
+.logo-like{
+  font-size: 3rem;
+  color: #00bbf0;
+  font-weight: bold;
+
+}
+
+
+/****recruiter/dashboard END*******/
+
 
 /**********Nav Bar Start ********/
 
@@ -25,9 +57,10 @@ body {
   
 }
 
-.loginbtns{
+.btngroup{
   display: flex;
-  gap: 20px;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 #btn1{
@@ -41,14 +74,14 @@ body {
   background: #013C5E;
 }
 
-#btn2{
+.btn2{
   background-color: #0086CA;
   color: white;
   border-radius: 8px;
 
 }
 
-#btn2:hover{
+.btn2:hover{
   color: #013C5E;
   background: white;
   border: 1px solid #013C5E;
@@ -70,11 +103,14 @@ body {
   font-size: 16px;
 }
 
-.navItem:hover{
-  background:#00204a;
-  color: white;
+.navItem:hover{ 
+  color: #00204a;
+  font-weight: bold;
 }
 
+.navItem:active{
+  color: #013C5E;
+}
 
 
 /**************Nav Bar End******************/

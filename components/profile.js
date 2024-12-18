@@ -38,7 +38,8 @@ import { faBell, faUser, faCircleUser } from '@fortawesome/free-solid-svg-icons'
     return (
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
-          <FontAwesomeIcon id="user-profile-icon" icon={faCircleUser} size="2x"  style={{color: "#35373b",}} />
+          <div id="user-profile-icon"><FontAwesomeIcon  icon={faCircleUser} size="2x"  style={{color: "#35373b",}} /></div>
+          
         </DropdownMenuTrigger>
         <DropdownMenuContent className="w-56">
           <DropdownMenuLabel>My Account</DropdownMenuLabel>
