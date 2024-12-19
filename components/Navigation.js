@@ -7,61 +7,12 @@ import Image from 'next/image';
 
 import {cn} from "@/lib/utils"
 import { RSC_SUFFIX } from "next/dist/lib/constants"
-//import {icons} from "@/components/icons"
-
-/*
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuTriggerStyle,
-
-} from "@/components/ui/navigation-menu"
-
-export function NavigationFunction() {
-  return (
-    <NavigationMenu>
-      <NavigationMenuList>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>How we work</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink>"Staff"</NavigationMenuLink>
-          </NavigationMenuContent>
-          <NavigationMenuContent>
-            <NavigationMenuLink>"Staff s"</NavigationMenuLink>
-          </NavigationMenuContent>
-          <NavigationMenuContent>
-            <NavigationMenuLink>"Staff g"</NavigationMenuLink>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>About Us</NavigationMenuTrigger>
-          <NavigationMenuContent>
-            <NavigationMenuLink>"./about"</NavigationMenuLink>
-          </NavigationMenuContent>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Job Listings</NavigationMenuTrigger>
-        </NavigationMenuItem>
-        <NavigationMenuItem>
-          <NavigationMenuTrigger>Contact Us</NavigationMenuTrigger>
-        </NavigationMenuItem>
-      </NavigationMenuList>
-    </NavigationMenu>
-  )
-}
-*/
 
 export default function CompleteNavbar(){
     return (
         <div className="header">
-          <div className="logoContainer">
-            <Image src="/logo.png" alt="Logo" width={30} height={30} />
-          </div>
-            
+          <div className="logo-like parent-item">LoRem</div>
+                   
             <div className="navContainer">
             <nav>
               <ul className="navList">

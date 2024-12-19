@@ -17,7 +17,8 @@ body {
 /****recruiter/dashboard start*******/
 .parent{
   display: flex;
-
+  gap: 100px;
+  
 }
 
 .postbtn{
@@ -25,20 +26,29 @@ body {
   margin-right: 20px;
 }
 
-.dashbordContainer{
+.dashbordNavigation{
   width: 70%;
   display: flex;
   margin: 10px auto;
   margin-left: 15%;
-  
-  
+    
+}
+
+.mainDashboard{
+  display: flex;
+  flex-direction: column;
 }
 
 .logo-like{
   font-size: 3rem;
   color: #00bbf0;
   font-weight: bold;
+  margin-left: 20px;
+}
 
+.navLink.active{ 
+  background: #24527a;
+  color: white;
 }
 
 
@@ -61,6 +71,8 @@ body {
   display: flex;
   gap: 30px;
   margin-top: 20px;
+  
+ 
 }
 
 #btn1{
@@ -112,6 +124,70 @@ body {
   color: #013C5E;
 }
 
-
 /**************Nav Bar End******************/
 
+/*****JOBS START*******/
+.jobs-container{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  
+}
+
+
+
+.jobs-container h1{
+  color:#00204a;
+  font-weight: bold;
+  
+}
+
+.jobs-container h2{
+  font-weight: bold;
+}
+
+
+
+.skillsButtons{
+  display: flex;
+  gap: 10px;
+}
+
+.skillsButtons Button{
+  background-color: #00204a;
+  color: white;
+  border-radius: 8px;
+}
+
+.skillsButtons Button:hover{
+  color: #00204a;
+  border: 1px solid #00204a;
+}
+
+.ellipsis{
+  position: absolute;
+  margin-top: 0;
+  right: 500px;
+}
+
+
+/*****JOBS END*******/
+
+
+/****BG iMAGE ***/
+#bgImage{
+  display: block;
+  right: 0;
+}
+
+
+/***Home *****/
+.homeContainers{
+  display: flex;
+  gap: 50px;
+}
