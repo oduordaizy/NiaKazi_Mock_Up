@@ -1,15 +1,21 @@
+"use client"
+
 import { cn } from "@/lib/utils"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import {useState} from 'react'
+import {useRouter} from 'next/router';
 
-export function LoginForm({
+
+/*export default function LoginForm({
   className,
   ...props
 }) {
   return (
-    (<div className={cn("flex flex-col gap-6", className)} {...props}>
+    <>
+    <div className={cn("flex flex-col gap-6", className)} {...props}>
       <Card className="overflow-hidden">
         <CardContent className="grid p-0 md:grid-cols-2">
           <form className="p-6 md:p-8">
@@ -17,7 +23,7 @@ export function LoginForm({
               <div className="flex flex-col items-center text-center">
                 <h1 className="text-2xl font-bold">Welcome back</h1>
                 <p className="text-balance text-muted-foreground">
-                  Login to your Acme Inc account
+                  Login to your Daisy Rec account
                 </p>
               </div>
               <div className="grid gap-2">
@@ -89,6 +95,111 @@ export function LoginForm({
         By clicking continue, you agree to our <a href="#">Terms of Service</a>{" "}
         and <a href="#">Privacy Policy</a>.
       </div>
-    </div>)
+    </div>
+    </>
   );
 }
+*/
+
+
+const Login = () =>{
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [remember, setRemember] = useState(false)
+  const [errors, setErrors] = useState({
+    email: '',
+    pasword: ''
+  });
+
+  //const router = useRouter(); //Initializing Next.js Router
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setErrors({email: '' , password: ''});
+
+    //Basic Validation
+
+    if(!email || !password){
+      setErrors({
+        email: !email ? "Email is required" : '',
+        password: !password ? "Password is required" : ''
+      });
+      return;
+    }
+
+    try{
+      //API call to authenticate
+      const response = await fetch('/recruiter/login', {
+        method: 'POST',
+        body: JSON.stringify({email, password, remember}),
+        headers: {
+          'Content-Type': 'appliction/json',
+        },
+
+      });
+
+      const data = await response.json();
+
+      if (response.ok){
+        //redirecting to the protected page which is the recruiters dashboard
+        router.push('/recruiters/dashboard');
+      }else{
+        //Handling server side validation errors
+        setErrors({
+          ...errors,
+          email: data.message || 'Invalid login Credentials'
+        });
+      }
+    } catch(error){
+      console.error(error);
+      setErrors({
+        ...errors,
+        email: 'An error occurred. Please try again later',
+      });
+    }
+  }
+
+
+    return(
+      <div>
+        <h1>Welcome to Daisy Rec</h1>
+        <form id="loginForm" onSubmit={handleSubmit}>
+          <div>
+            <label htmlFor="email">Email</label>
+            <input type="email" id="email" value={email}
+            onChange={(e) => setEmail(e.target.value)} required />
+            {errors.email && <span className="error">{errors.email}</span>}
+          </div>
+  
+        
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" value={password} 
+          onChange={(e) => setPassword(e.target.value)}
+          required />
+          {errors.password && <span className="error">{errors.pasword}</span>}
+        </div>
+  
+        <div>
+          <input type="checkbox" id="remember" checked={remember} 
+        
+          onChange={()=>setRemember(!remember)} />
+          <label htmlFor="remember">Remember me</label>
+
+        </div>
+       
+       <div>
+       <button type="submit" id="submit">Sign In</button>
+       </div>
+
+        <p>Don't have an account? <a href="/registration/signup">Sign up</a></p>
+  
+      </form>
+      </div>
+
+      );
+};
+
+export default Login;
+  
