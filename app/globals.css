@@ -6,6 +6,7 @@ body {
   font-family: Inter;
   background: #e4f1fe;
   font-size: large;
+  height: 100%;
 }
 
 .title{
@@ -188,6 +189,76 @@ body {
 
 /***Home *****/
 .homeContainers{
+  position: relative;
   display: flex;
-  gap: 50px;
+  justify-content: space-between;
+  align-items: flex-start;
 }
+
+.homeContainers p{
+  color:#0086CA;
+  font-size: 1.5rem;
+}
+
+.homeContainers h1{
+  color:#013C5E;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.homeText{
+  margin-left: 30px;
+  margin-top: 90px;
+  
+}
+
+/*****Recruiter Login START ****/
+form{
+  width: 50%;
+  margin: 20px auto;
+  
+}
+
+label{
+  display: block;
+  margin-top: 1px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+h1, p{
+  text-align: center;
+}
+
+h1{
+  color: #013C5E;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+#submit{
+  color: white;
+  display: block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #013C5E;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#submit:hover{
+  background-color: #0086CA;
+}
+
+/***Recruiter Login END*****/
