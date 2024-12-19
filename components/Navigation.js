@@ -16,7 +16,7 @@ export default function CompleteNavbar(){
             <div className="navContainer">
             <nav>
               <ul className="navList">
-                <li className="navItem"><Link className="navLink" href="#">How We Work</Link></li>
+                <li className="navItem"><Link className="navLink" href="/howWeWork">How We Work</Link></li>
                 <li className="navItem"><Link className="navLink" href="./about">About us</Link></li>
                 <li className="navItem"><Link className="navLink" href="/joblistings">Job Listings</Link></li>
                 <li className="navItem"><Link className="navLink" href="/contact">Contact us</Link></li>
@@ -25,7 +25,7 @@ export default function CompleteNavbar(){
             </div>
 
             <div className="loginbtns">
-              <Link href = "./recruiter/dashboard"><Button id="btn1">Post Job</Button></Link>
+              <Link href = "./recruiter/login"><Button id="btn1">Post Job</Button></Link>
               <Link href = "./applicant/login"><Button className="btn2">Get hired</Button></Link>
             </div>
 
