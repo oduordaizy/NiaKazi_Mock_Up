@@ -102,7 +102,7 @@ import {useRouter} from 'next/router';
 */
 
 
-const Login = () =>{
+const LoginForm = () =>{
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [remember, setRemember] = useState(false)
