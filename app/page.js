@@ -17,7 +17,7 @@ export function Home() {
             <h1>Connect.<br></br> Work. Success</h1>
             </div>
           
-          <div><Image id="" src="/form-image.png" width={600} height={200} alt="Background Image"/></div>
+          <div><Image id="" src="/bg3.png" width={600} height={200} alt="Background Image"/></div>
         </div>
         </div>
         
