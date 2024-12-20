@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  font-family: Inter;
+  font-family: Arial, sans-serif;;
   background: #e4f1fe;
   font-size: large;
   height: 100%;
@@ -262,3 +262,19 @@ h1{
 }
 
 /***Recruiter Login END*****/
+
+/*****About START*****/
+
+.textContainer p{
+  text-align: left;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.textContainer{
+    
+  margin-left: 2%;
+  margin-right: 2%;
+  
+}
+/****About End********/
