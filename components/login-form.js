@@ -174,7 +174,7 @@ const LoginForm = () =>{
   
         
         <div>
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" id="password" value={password} 
           onChange={(e) => setPassword(e.target.value)}
           required />

@@ -5,7 +5,7 @@ const Joblistings = () => {
     return(
     <>
         <CompleteNavbar />
-        <div textContainer>
+        <div className="textcontainer">
         <h1 className="title">Job Listings</h1>
 
         <p>Here you will see the list of some of the jobs available</p>
