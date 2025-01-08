@@ -17,6 +17,7 @@ function Page2() {
             <h1>Success</h1>
             <p>With Succesful connections and seamless collaboration, SUCCESS becomes the ultimate outcome creating rewarding opportunities that benefit both employers and job seekers</p>
         </div>
+       
 
         <video width="500" height="450" controls>
             <source src="/tutorialVideo.mp4" type="video/mp4" />
