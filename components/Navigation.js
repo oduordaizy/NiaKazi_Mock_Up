@@ -11,7 +11,7 @@ import { RSC_SUFFIX } from "next/dist/lib/constants"
 export default function CompleteNavbar(){
     return (
         <div className="header">
-          <Link className="navLink" href="/"><div className="logo-like parent-item">LoRem</div></Link>
+          <Link className="navLink" href="/"><div className="logo-like parent-item">NiaKazi</div></Link>
                    
             <div className="navContainer">
             <nav>
