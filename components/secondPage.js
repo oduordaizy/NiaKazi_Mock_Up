@@ -14,7 +14,7 @@ function Page2() {
         <div>
             <Image className='moreInfoIcon' src="/icon2.PNG" width={50} height={50} alt="Icon"/>
             <h1>Work</h1>
-            <p>One Emp-loyers and job seekers are connected, its time to work together. Our Platform empowers both parties to collaborate effectrively, making meaningful strides towards their career goals</p>
+            <p>Once Employers and job seekers are connected, its time to work together. Our Platform empowers both parties to collaborate effectrively, making meaningful strides towards their career goals</p>
         </div>
 
         <div>
