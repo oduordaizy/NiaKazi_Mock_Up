@@ -287,7 +287,7 @@ video{
 }
 /***Footer Start****/
 .footerContainer{
-  border: 1px solid grey;
+  
   display: grid;
   grid-template-columns: auto auto auto;
   padding: 30px;
@@ -308,7 +308,26 @@ video{
   font-size: 1rem;
 }
 
-.copyright{
-  padding: 20px;
-}
+
 /***Footer End****/
+
+/***Second Page  Start****/
+.secondPageContainer{
+  background-color: white;
+
+  padding: 30px;
+
+}
+
+.moreInfo{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin-bottom: 20vh;
+}
+
+.moreInfoIcon{
+  margin: 0 auto;
+  margin-bottom: 2vh;
+}
+
+/***Second Page  End****/

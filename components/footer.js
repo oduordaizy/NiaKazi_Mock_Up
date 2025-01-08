@@ -26,7 +26,7 @@ function PageFooter() {
     </div>
     <div className='footerClasses'>
         <div>
-        <h1>Resources</h1>
+        <h1>RESOURCES</h1>
         <p>Customer Support</p>
         <p>Company Reviews</p>
         <p>Companies We Serve</p>
