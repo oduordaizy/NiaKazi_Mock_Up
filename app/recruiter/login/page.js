@@ -10,6 +10,8 @@ function RecruiterLogin() {
       </div>
     </div>
   )
-}
+} 
+
+
 
 export default RecruiterLogin

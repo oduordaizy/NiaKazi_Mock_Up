@@ -8,6 +8,7 @@ config.autoAddCss = false
 import { faBell, faUser, faCircleUser, faEllipsisVertical } from '@fortawesome/free-solid-svg-icons'; // Import the specific icon
 import Profile from "@/components/profile";
 
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -25,12 +26,11 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
-    </html>
+      <html lang="en">
+        <body>   
+          {children}
+        </body>
+      </html>
+    
   );
 }
