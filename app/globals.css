@@ -285,6 +285,78 @@ h1{
 video{
   margin: 20px auto;
 }
+
+
+/*********Contact Us Page START *************/
+.contact-container{
+
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-container h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form div{
+  margin-bottom: 0.5rem;
+}
+
+input, textarea, select{
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#submitButton{
+  background-color: #0086CA;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#submitButton:hover{
+  color: #013C5E;
+  background: white;
+  border: 1px solid #013C5E;
+}
+
+.faq{
+  background-color: white;
+}
+
+.faq h3{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  
+}
+
+.faq-item h4{
+  font-size: 1.5rem;
+  color: #00204a;
+}
+.faq-item p{
+  text-align: left;
+}
+
+
+
+/*********Contact Us Page END *************/
+
 /***Footer Start****/
 .footerContainer{
   
