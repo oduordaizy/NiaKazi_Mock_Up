@@ -202,17 +202,20 @@ body {
 .homeContainers p{
   color:#0086CA;
   font-size: 1.5rem;
+  text-align: left;
+  
 }
 
 .homeContainers h1{
   color:#013C5E;
   font-size: 4rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .homeText{
   margin-left: 30px;
-  margin-top: 90px;
+  margin-top: 25vh;
   
 }
 
@@ -291,7 +294,12 @@ video{
 .contact-container{
 
   margin: 0 auto;
-  padding: 20px;
+  
+}
+
+.find-us{
+  display: grid;
+  grid-template-columns: 40% 60%;
 }
 
 .contact-container h1{
@@ -353,7 +361,10 @@ input, textarea, select{
   text-align: left;
 }
 
-
+.contact-methods, .location{
+  background: white;
+  
+}
 
 /*********Contact Us Page END *************/
 

@@ -18,7 +18,7 @@ export function Home() {
           <div className="homeContainers">
             <div className="homeText">
               <p>Unlock your potential, Find your path.</p>
-              <h1>Connect.<br></br> Work. Success</h1>
+              <h1>Connect, Work, Success</h1>
 
               <div className="loginbtns">
               <Link href = "./recruiter/login"><Button id="btn1">Post Job</Button></Link>

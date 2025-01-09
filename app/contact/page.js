@@ -1,5 +1,5 @@
 'use client'
-
+import Image from 'next/image';
 import CompleteNavbar from "@/components/Navigation";
 import { useState } from "react";
 import PageFooter from '@/components/footer';
@@ -42,6 +42,8 @@ const Contact = () => {
             <h1 className="title">Contact us</h1>
             <p>We are here to assist you! Fill out the form below, and we'll get back to you as sson as possible</p>
 
+            <div className='find-us'>
+                <div><Image alt="Contact us Image" src="/contact.png" width={400} height={500}></Image></div>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Full Name: </label>
@@ -82,13 +84,15 @@ const Contact = () => {
 
             </form>
 
+            </div>
+
             <div className="contact-methods">
                 <h3>Other Ways to Reach Us</h3>
                 <ul>
                     <li><strong>Phone:</strong> +1 (555) 123-4567</li>
-                    <li><strong>Email:</strong> <a href="mailto:support@yourcompany.com">support@yourcompany.com</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:support@niakazi.com">support@niakazi.com</a></li>
                     <li><strong>Follow Us:</strong>
-                    <a href="https://www.linkedin.com/company/yourcompany" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+                    <a href="https://www.linkedin.com/company/niakazi" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
                     <a href="https://twitter.com/yourcompany" target="_blank" rel="noopener noreferrer">Twitter</a>
                 </li>
                 </ul>

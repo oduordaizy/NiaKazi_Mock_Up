@@ -67,7 +67,7 @@ const LoginForm = () => {
 
     return(
       <div>
-        <h1>Welcome to Daisy Rec</h1>
+        <h1>Welcome to NiaKazi</h1>
         <form id="loginForm" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="email">Email</label>
