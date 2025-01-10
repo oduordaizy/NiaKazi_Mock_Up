@@ -71,19 +71,14 @@ body {
   
 }
 
-.btngroup{
-  display: flex;
-  gap: 30px;
-  margin-top: 20px;
-  
+
  
-}
 
 #btn1{
   border: 1px solid #013C5E;
   color: #013C5E;
   border-radius: 8px;
-  margin-right: 30px;
+  margin-right: 1.5rem;
 }
 
 #btn1:hover{
@@ -285,6 +280,9 @@ h1{
   
 }
 /****About End********/
+.videoContainer{
+  width: 100%;
+}
 video{
   margin: 20px auto;
 }
@@ -413,9 +411,65 @@ input, textarea, select{
   margin-bottom: 20vh;
 }
 
-.moreInfoIcon{
+.moreInfoIcons{
+  font-size: 2rem;
   margin: 0 auto;
-  margin-bottom: 2vh;
+  
 }
 
 /***Second Page  End****/
+
+
+/********Responsiveness ***********/
+/***navigation bar ****/
+
+@media (max-width: 768px){
+
+}
+
+
+@media (max-width: 480px){
+.pageImageContainer{
+  padding: 2vh;
+}
+.navList, .loginbtns{
+  display: none;
+}
+
+.logo-like{
+  font-size: 1rem;
+}
+
+#btn1{
+  margin-right: 0.5rem;
+}
+
+.homeContainers h1{
+font-size: 2.5rem;
+}
+.homeContainers p{
+  font-size: 1rem;
+}
+
+.homeContainers{
+  flex-direction: column;
+  
+}
+.homeText{
+ 
+  margin-top: 5vh;
+  
+}
+
+.moreInfo{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  
+}
+
+.moreInfoItem{
+  margin-bottom: 5vh;
+}
+}
+
