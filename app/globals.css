@@ -386,6 +386,11 @@ input, textarea, select{
   text-align: center;
 }
 
+.footerContainer p:hover{
+  color:#00204a;
+  font-weight: bold;
+}
+
 .footerClasses p{
   line-height: 1.6;
   font-size: 1rem;
