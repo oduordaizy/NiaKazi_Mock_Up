@@ -23,6 +23,11 @@ body {
   
 }
 
+.toggleIcon{
+  cursor: pointer;
+  display: none;
+}
+
 
 
 .postbtn{
@@ -71,19 +76,14 @@ body {
   
 }
 
-.btngroup{
-  display: flex;
-  gap: 30px;
-  margin-top: 20px;
-  
+
  
-}
 
 #btn1{
   border: 1px solid #013C5E;
   color: #013C5E;
   border-radius: 8px;
-  margin-right: 30px;
+  margin-right: 1.5rem;
 }
 
 #btn1:hover{
@@ -202,17 +202,20 @@ body {
 .homeContainers p{
   color:#0086CA;
   font-size: 1.5rem;
+  text-align: left;
+  
 }
 
 .homeContainers h1{
   color:#013C5E;
   font-size: 4rem;
   font-weight: bold;
+  text-align: left;
 }
 
 .homeText{
   margin-left: 30px;
-  margin-top: 90px;
+  margin-top: 25vh;
   
 }
 
@@ -282,9 +285,92 @@ h1{
   
 }
 /****About End********/
+.videoContainer{
+  width: 100%;
+}
 video{
   margin: 20px auto;
 }
+
+
+/*********Contact Us Page START *************/
+.contact-container{
+
+  margin: 0 auto;
+  
+}
+
+.find-us{
+  display: grid;
+  grid-template-columns: 40% 60%;
+}
+
+.contact-container h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+}
+
+form div{
+  margin-bottom: 0.5rem;
+}
+
+input, textarea, select{
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#submitButton{
+  background-color: #0086CA;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#submitButton:hover{
+  color: #013C5E;
+  background: white;
+  border: 1px solid #013C5E;
+}
+
+.faq{
+  background-color: white;
+}
+
+.faq h3{
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1.5rem;
+  
+}
+
+.faq-item h4{
+  font-size: 1.5rem;
+  color: #00204a;
+}
+.faq-item p{
+  text-align: left;
+}
+
+.contact-methods, .location{
+  background: white;
+  
+}
+
+/*********Contact Us Page END *************/
+
 /***Footer Start****/
 .footerContainer{
   
@@ -301,6 +387,11 @@ video{
 
 .footerContainer p{
   text-align: center;
+}
+
+.footerContainer p:hover{
+  color:#00204a;
+  font-weight: bold;
 }
 
 .footerClasses p{
@@ -325,10 +416,81 @@ video{
   margin-bottom: 20vh;
 }
 
-.moreInfoIcon{
+.moreInfoIcons{
+  font-size: 2rem;
   margin: 0 auto;
-  margin-bottom: 2vh;
+  
 }
+
+/***Second Page  End****/
+
+
+/********Responsiveness ***********/
+/***navigation bar ****/
+
+@media (max-width: 768px){
+  .navList, .loginbtns{
+    display: none;
+  }
+
+  .toggleIcon{
+    display: block;
+
+  }
+  .navList{
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+
+  
+
+}
+
+
+@media (max-width: 480px){
+.pageImageContainer{
+  padding: 2vh;
+}
+
+.logo-like{
+  font-size: 1rem;
+}
+
+#btn1{
+  margin-right: 0.5rem;
+}
+
+.homeContainers h1{
+font-size: 2.5rem;
+}
+.homeContainers p{
+  font-size: 1rem;
+}
+
+.homeContainers{
+  flex-direction: column;
+  
+}
+.homeText{
+ 
+  margin-top: 5vh;
+  
+}
+
+.moreInfo{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vh;
+  
+}
+
+.moreInfoItem{
+  margin-bottom: 5vh;
+}
+}
+
 
 .moreInfo h1{
   color: black;

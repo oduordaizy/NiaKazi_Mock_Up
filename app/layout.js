@@ -9,6 +9,8 @@ import { faBell, faUser, faCircleUser, faEllipsisVertical } from '@fortawesome/f
 import Profile from "@/components/profile";
 
 
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

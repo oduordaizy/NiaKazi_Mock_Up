@@ -1,16 +1,18 @@
 "use client"
 import * as React from "react"
-
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import Image from 'next/image';
 
 import {cn} from "@/lib/utils"
 import { RSC_SUFFIX } from "next/dist/lib/constants"
+import { FiMenu } from "react-icons/fi";
 
 export default function CompleteNavbar(){
     return (
         <div className="header">
+          <FiMenu className="toggleIcon" style={{ color: '#00204a' }}/>
+          
           <Link className="navLink" href="/"><div className="logo-like parent-item">NiaKazi</div></Link>
                    
             <div className="navContainer">

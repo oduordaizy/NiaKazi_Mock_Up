@@ -18,7 +18,7 @@ export function Home() {
           <div className="homeContainers">
             <div className="homeText">
               <p>Unlock your potential, Find your path.</p>
-              <h1>Connect.<br></br> Work. Success</h1>
+              <h1>Connect, Work, Success</h1>
 
               <div className="loginbtns">
               <Link href = "./recruiter/login"><Button id="btn1">Post Job</Button></Link>
@@ -27,7 +27,7 @@ export function Home() {
             </div>
 
           
-          <div><Image id="" src="/bg3.png" width={600} height={200} alt="Background Image"/></div>
+          <div className="pageImageContainer"><Image id="" src="/bg3.png" width={600} height={200} alt="Background Image"/></div>
         </div>
         </div>
 
