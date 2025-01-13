@@ -48,6 +48,11 @@ body {
   flex-direction: column;
 }
 
+.logo{
+  display: flex;
+  gap: 0;
+}
+
 .logo-like{
   font-size: 3rem;
   color: #00bbf0;
@@ -188,6 +193,7 @@ body {
 #bgImage{
   display: block;
   right: 0;
+
 }
 
 
@@ -381,11 +387,12 @@ input, textarea, select{
 
 .footerContainer h1{
   color: black;
-  font-size: 18px;
+  font-size: 1rem;
   text-align: center;
 }
 
 .footerContainer p{
+  font-size: 0.5rem;
   text-align: center;
 }
 
@@ -397,6 +404,11 @@ input, textarea, select{
 .footerClasses p{
   line-height: 1.6;
   font-size: 1rem;
+}
+
+.copyright{
+  color: #00204a;
+  font-size: 0.8rem;
 }
 
 
@@ -450,9 +462,7 @@ input, textarea, select{
 
 
 @media (max-width: 480px){
-.pageImageContainer{
-  padding: 2vh;
-}
+
 
 .logo-like{
   font-size: 1rem;
@@ -463,14 +473,15 @@ input, textarea, select{
 }
 
 .homeContainers h1{
-font-size: 2.5rem;
+font-size: 3rem;
 }
 .homeContainers p{
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .homeContainers{
   flex-direction: column;
+  gap: 10vh;
   
 }
 .homeText{
@@ -496,5 +507,7 @@ font-size: 2.5rem;
   color: black;
   font-size: 1.5rem;
 }
+
+
 
 /***Second Page  End****/

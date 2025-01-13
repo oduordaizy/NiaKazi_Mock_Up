@@ -9,29 +9,29 @@ function PageFooter() {
     <div className='footerClasses'>
         <h1>COMPANY</h1>
         <Link href="./about"><p>About Us</p></Link>
-        <p>Terms</p>
-        <p>Privacy</p>
-        <p>Accessibility</p>
-        <p>Disclaimer</p>
+        <Link href="#"><p>Terms</p></Link>
+        <Link href="#"><p>Privacy</p></Link>
+        <Link href="#"><p>Accessibility</p></Link>
+        <Link href="#"><p>Disclaimer</p></Link>
 
     </div>
     <div className='footerClasses'>
         <h1>BROWSE</h1>
-        <p>Search</p>
-        <p>Jobs by location</p>
-        <p>Jobs Title</p>
-        <p>Jobs By Company</p>
-        <p>Jobs By Category</p>
+        <Link href="#"><p>Search</p></Link>
+        <Link href="#"><p>Jobs by location</p></Link>
+        <Link href="#"><p>Jobs Title</p></Link>
+        <Link href="#"><p>Jobs By Company</p></Link>
+        <Link href="#"><p>Jobs By Category</p></Link>
 
     </div>
     <div className='footerClasses'>
         <div>
         <h1>RESOURCES</h1>
-        <p>Customer Support</p>
-        <p>Company Reviews</p>
-        <p>Companies We Serve</p>
-        <p>Testimonials</p>
-        <p>Share NiaKazi</p>
+        <Link href="#"><p>Customer Support</p></Link>
+        <Link href="#"><p>Company Reviews</p></Link>
+        <Link href="#"><p>Companies We Serve</p></Link>
+        <Link href="#"><p>Testimonials</p></Link>
+        <Link href="#"><p>Share NiaKazi</p></Link>
         </div>
         <div className="social-media">
             
@@ -40,7 +40,7 @@ function PageFooter() {
     
     </div>
     <div className='copyright'>
-        <p>© 2025 NiaKazi.</p>
+        <p>©2025 NiaKazi.</p>
     </div>
 
     </>

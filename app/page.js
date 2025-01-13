@@ -27,7 +27,7 @@ export function Home() {
             </div>
 
           
-          <div className="pageImageContainer"><Image id="" src="/bg3.png" width={600} height={200} alt="Background Image"/></div>
+          <div className="pageImageContainer"><Image id="bgImage" src="/bg3.png" width={600} height={200} alt="Background Image"/></div>
         </div>
         </div>
 
