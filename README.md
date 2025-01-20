@@ -1,4 +1,4 @@
-# DaisyRec - Modern Recruitment Platform
+# NiaKazi - Modern Recruitment Platform
 
 A modern recruitment platform built with Next.js, helping connect recruiters with potential candidates.
 
